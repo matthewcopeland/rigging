@@ -60,17 +60,11 @@ html, body {
   -o-transform: rotate3d(0, 1, 0, 45deg);
   transform: rotate3d(0, 1, 0, 45deg); }
 .fight-stance .arm-upper, .fight-stance .femur {
-  -webkit-transform: rotate3d(0, 0, 1, 30deg);
-  -moz-transform: rotate3d(0, 0, 1, 30deg);
-  -ms-transform: rotate3d(0, 0, 1, 30deg);
-  -o-transform: rotate3d(0, 0, 1, 30deg);
-  transform: rotate3d(0, 0, 1, 30deg); }
-  .fight-stance .arm-upper.right, .fight-stance .femur.right {
-    -webkit-transform: rotate3d(0, 0, 1, 30deg);
-    -moz-transform: rotate3d(0, 0, 1, 30deg);
-    -ms-transform: rotate3d(0, 0, 1, 30deg);
-    -o-transform: rotate3d(0, 0, 1, 30deg);
-    transform: rotate3d(0, 0, 1, 30deg); }
+  -webkit-transform: rotate3d(0, 0, 1, 27deg);
+  -moz-transform: rotate3d(0, 0, 1, 27deg);
+  -ms-transform: rotate3d(0, 0, 1, 27deg);
+  -o-transform: rotate3d(0, 0, 1, 27deg);
+  transform: rotate3d(0, 0, 1, 27deg); }
 .fight-stance .forearm {
   -webkit-transform: rotate3d(0, 0, 1, 90deg);
   -moz-transform: rotate3d(0, 0, 1, 90deg);
@@ -78,11 +72,11 @@ html, body {
   -o-transform: rotate3d(0, 0, 1, 90deg);
   transform: rotate3d(0, 0, 1, 90deg); }
 .fight-stance .shin {
-  -webkit-transform: rotate3d(0, 0, -1, 60deg);
-  -moz-transform: rotate3d(0, 0, -1, 60deg);
-  -ms-transform: rotate3d(0, 0, -1, 60deg);
-  -o-transform: rotate3d(0, 0, -1, 60deg);
-  transform: rotate3d(0, 0, -1, 60deg); }
+  -webkit-transform: rotate3d(0, 0, -1, 63.0deg);
+  -moz-transform: rotate3d(0, 0, -1, 63.0deg);
+  -ms-transform: rotate3d(0, 0, -1, 63.0deg);
+  -o-transform: rotate3d(0, 0, -1, 63.0deg);
+  transform: rotate3d(0, 0, -1, 63.0deg); }
 
 .shoulder, .hip, .elbow, .knee {
   height: 10px;

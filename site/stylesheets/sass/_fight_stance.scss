@@ -1,15 +1,18 @@
-.fight-stance {
-  .shoulders { @include transform( rotate3d(0,1,0, 45deg) ); }
+@mixin fight-stance($rotation) {
+  @if $rotation == left { $rotation: 45deg; }
+  @if $rotation == right { $rotation: -45deg; }
 
-  .arm-upper, .femur {
-    @include transform( rotate3d(0,0,1, 30deg) );
-    &.right { @include transform( rotate3d(0,0,1, 30deg) ); }
-  }
+  .shoulders { @include transform( rotate3d(0,1,0, $rotation) ); }
 
-  .forearm { @include transform( rotate3d(0,0,1, 90deg) ); }
+  .arm-upper, .femur { @include transform( rotate3d(0,0,1, $rotation*0.6) ); }
 
-  .shin { @include transform( rotate3d(0,0,-1, 60deg) ); }
+  .forearm { @include transform( rotate3d(0,0,1, $rotation*2) ); }
+
+  .shin { @include transform( rotate3d(0,0,-1, $rotation*1.4) ); }
 }
 
 
+.fight-stance {
+  @include fight-stance($rotation: left);
+}
 
