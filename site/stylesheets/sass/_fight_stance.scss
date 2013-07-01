@@ -11,8 +11,13 @@
   .shin { @include transform( rotate3d(0,0,-1, $rotation*1.4) ); }
 }
 
+$directions: (left, right);
 
 .fight-stance {
-  @include fight-stance($rotation: left);
+  @each $direction in $directions {
+    &.#{$direction} {
+      @include fight-stance($rotation: $direction);
+    }
+  }
 }
 
