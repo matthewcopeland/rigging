@@ -1,0 +1,137 @@
+html, body, a {
+  color: #333;
+  font-family: arial; }
+
+a:hover {
+  text-decoration: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+#links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: 2.5px; }
+  #links li {
+    display: inline-block;
+    vertical-align: middle; }
+    #links li:nth-of-type(1) a {
+      background-image: url("/images/github.png"); }
+    #links li:nth-of-type(2) a {
+      background-image: url("/images/rss.png"); }
+  #links a {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 75%; }
+    #links a:hover, #links a:hover p {
+      opacity: 0.8; }
+    #links a p {
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: auto;
+      text-align: center; }
+
+.shoulder, .hip, .elbow, .knee {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #333; }
+
+.hero {
+  width: 5px;
+  left: 50%;
+  margin-left: -2.5px;
+  bottom: 123px;
+  position: absolute; }
+  .hero * {
+    background: #333; }
+
+.torso {
+  height: 90px;
+  width: 5px;
+  position: relative; }
+  .torso * {
+    position: absolute; }
+
+.neck {
+  height: 20px;
+  width: 5px;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.5px; }
+
+.head {
+  height: 60px;
+  width: 48px;
+  border-radius: 44% 44% 54% 54%;
+  top: -60px;
+  left: 50%;
+  margin-left: -24px; }
+
+.shoulders, .hips {
+  height: 5px; }
+
+.shoulders {
+  width: 67.2px;
+  top: 0;
+  left: 50%;
+  margin-left: -33.6px; }
+
+.hips {
+  bottom: 0;
+  width: 38.4px;
+  left: 50%;
+  margin-left: -19.2px; }
+
+.shoulder, .hip {
+  top: 50%;
+  margin-top: -5px; }
+  .shoulder.left, .hip.left {
+    left: -5px; }
+  .shoulder.right, .hip.right {
+    right: -5px; }
+
+.elbow, .knee {
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px; }
+
+.arm-upper, .forearm, .femur, .shin {
+  width: 5px;
+  left: 50%;
+  margin-left: -2.5px;
+  top: 5px; }
+
+.arm-upper {
+  height: 48px; }
+
+.forearm {
+  height: 48px; }
+
+.femur {
+  height: 54px; }
+
+.shin {
+  height: 54px; }

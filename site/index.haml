@@ -1,0 +1,27 @@
+!!!5
+%html
+  %head
+    %meta(charset="UTF-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    %title Orbits
+    %link{rel: 'icon', href:'/images/favicon.png', type: 'image/png'}
+    %link{rel:'stylesheet', type:'text/css', href:'/stylesheets/css/screen.css'}
+
+  %body
+    / = haml :'_links'
+    .hero
+      .torso
+        .neck
+          .head
+        .shoulders
+          - sides.each do |side|
+            .shoulder{class: side}
+              .arm-upper{class: side}
+                .elbow
+                  .forearm{class: side}
+        .hips
+          - sides.each do |side|
+            .hip{class: side}
+              .femur{class: side}
+                .knee
+                  .shin

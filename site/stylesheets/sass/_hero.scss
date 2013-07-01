@@ -1,0 +1,91 @@
+%joint {
+  @include circle($joint-size);
+  background: #333;
+}
+
+
+.hero {
+  width: $stick-width;
+  @include horizontal-center($stick-width);
+  bottom: $gutter + $leg-length;
+  position: absolute;
+  * { background: #333; }
+}
+
+
+.torso {
+  height: $torso-height;
+  width: $torso-width;
+  position: relative;
+  * { position: absolute; }
+}
+
+
+.neck {
+  height: $neck-height;
+  width: $neck-width;
+  top: -$neck-height;
+  @include horizontal-center($neck-width);
+}
+
+
+.head {
+  height: $head-height;
+  width: $head-width;
+  border-radius: 44% 44% 54% 54%;
+  top: -$head-height;
+  @include horizontal-center($head-width);
+}
+
+
+.shoulders, .hips {
+  height: $stick-width;
+}
+
+
+.shoulders {
+  width: $shoulders-width;
+  top: 0;
+  @include horizontal-center($shoulders-width);
+}
+
+.hips {
+  bottom: 0;
+  width: $hips-width;
+  @include horizontal-center($hips-width);
+}
+
+.shoulder, .hip {
+  @extend %joint;
+  @include vertical-middle($joint-size);
+  &.left { left: -$joint-size/2; }
+  &.right { right: -$joint-size/2; }
+}
+
+.elbow, .knee {
+  @extend %joint;
+  bottom: -$joint-size/2;
+  @include horizontal-center($joint-size);
+}
+
+.arm-upper, .forearm, .femur, .shin {
+  width: $arm-width;
+  @include horizontal-center($arm-width);
+  top: $joint-size/2;
+}
+
+.arm-upper {
+  height: $arm-upper-length;
+}
+
+.forearm {
+  height: $forearm-length;
+}
+
+.femur {
+  height: $femur-length;
+}
+
+.shin {
+  height: $shin-length;
+}

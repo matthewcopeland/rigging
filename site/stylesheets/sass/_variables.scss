@@ -1,0 +1,40 @@
+// sizes
+$stick-width: 5px;
+$joint-size: $stick-width*2;
+
+$head-size: 60px;
+$head-height: $head-size;
+$head-width: $head-size*0.8;
+
+$neck-height: $head-size/3;
+$neck-width: $stick-width;
+
+$torso-height: $head-size*1.5;
+$torso-width: $stick-width;
+
+$shoulders-width: $head-width*1.4;
+
+$hips-width: $head-width*0.8;
+
+$arm-width: $stick-width;
+$arm-segement-length: $head-size*0.8;
+$arm-upper-length: $arm-segement-length;
+$forearm-length: $arm-segement-length;
+$arm-length: $arm-upper-length + $forearm-length + $joint-size;
+
+
+$leg-width: $stick-width;
+$leg-segement-length: $head-size*0.9;
+
+$femur-width: $stick-width;
+$femur-length: $leg-segement-length;
+
+$shin-width: $stick-width;
+$shin-length: $leg-segement-length;
+$leg-length: $femur-length + $shin-length + $joint-size;
+
+
+// layout
+$gutter: 5px;
+$link-z: 1;
+$touch-size: 50px;
