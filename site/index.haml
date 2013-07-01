@@ -9,7 +9,7 @@
 
   %body
     / = haml :'_links'
-    .hero
+    .hero.fight-stance
       .torso
         .neck
           .head
@@ -17,11 +17,11 @@
           - sides.each do |side|
             .shoulder{class: side}
               .arm-upper{class: side}
-                .elbow
+                .elbow{class: side}
                   .forearm{class: side}
         .hips
           - sides.each do |side|
             .hip{class: side}
               .femur{class: side}
-                .knee
-                  .shin
+                .knee{class: side}
+                  .shin{class: side}

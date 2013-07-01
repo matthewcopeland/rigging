@@ -53,6 +53,37 @@ html, body {
       width: auto;
       text-align: center; }
 
+.fight-stance .shoulders {
+  -webkit-transform: rotate3d(0, 1, 0, 45deg);
+  -moz-transform: rotate3d(0, 1, 0, 45deg);
+  -ms-transform: rotate3d(0, 1, 0, 45deg);
+  -o-transform: rotate3d(0, 1, 0, 45deg);
+  transform: rotate3d(0, 1, 0, 45deg); }
+.fight-stance .arm-upper, .fight-stance .femur {
+  -webkit-transform: rotate3d(0, 0, 1, 30deg);
+  -moz-transform: rotate3d(0, 0, 1, 30deg);
+  -ms-transform: rotate3d(0, 0, 1, 30deg);
+  -o-transform: rotate3d(0, 0, 1, 30deg);
+  transform: rotate3d(0, 0, 1, 30deg); }
+  .fight-stance .arm-upper.right, .fight-stance .femur.right {
+    -webkit-transform: rotate3d(0, 0, 1, 30deg);
+    -moz-transform: rotate3d(0, 0, 1, 30deg);
+    -ms-transform: rotate3d(0, 0, 1, 30deg);
+    -o-transform: rotate3d(0, 0, 1, 30deg);
+    transform: rotate3d(0, 0, 1, 30deg); }
+.fight-stance .forearm {
+  -webkit-transform: rotate3d(0, 0, 1, 90deg);
+  -moz-transform: rotate3d(0, 0, 1, 90deg);
+  -ms-transform: rotate3d(0, 0, 1, 90deg);
+  -o-transform: rotate3d(0, 0, 1, 90deg);
+  transform: rotate3d(0, 0, 1, 90deg); }
+.fight-stance .shin {
+  -webkit-transform: rotate3d(0, 0, -1, 60deg);
+  -moz-transform: rotate3d(0, 0, -1, 60deg);
+  -ms-transform: rotate3d(0, 0, -1, 60deg);
+  -o-transform: rotate3d(0, 0, -1, 60deg);
+  transform: rotate3d(0, 0, -1, 60deg); }
+
 .shoulder, .hip, .elbow, .knee {
   height: 10px;
   width: 10px;
@@ -66,7 +97,8 @@ html, body {
   bottom: 123px;
   position: absolute; }
   .hero * {
-    background: #333; }
+    background: #333;
+    -webkit-transition: -webkit-transform 0.8s; }
 
 .torso {
   height: 90px;
@@ -74,6 +106,13 @@ html, body {
   position: relative; }
   .torso * {
     position: absolute; }
+
+.neck, .head {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%; }
 
 .neck {
   height: 20px;
@@ -122,7 +161,12 @@ html, body {
   width: 5px;
   left: 50%;
   margin-left: -2.5px;
-  top: 5px; }
+  top: 5px;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0; }
 
 .arm-upper {
   height: 48px; }

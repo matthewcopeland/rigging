@@ -9,7 +9,7 @@
   @include horizontal-center($stick-width);
   bottom: $gutter + $leg-length;
   position: absolute;
-  * { background: #333; }
+  * { background: #333; -webkit-transition: -webkit-transform .8s; }
 }
 
 
@@ -20,6 +20,10 @@
   * { position: absolute; }
 }
 
+
+.neck, .head {
+  @include transform-origin(50% 100%);
+}
 
 .neck {
   height: $neck-height;
@@ -72,6 +76,7 @@
   width: $arm-width;
   @include horizontal-center($arm-width);
   top: $joint-size/2;
+  @include transform-origin( 50% 0 );
 }
 
 .arm-upper {
